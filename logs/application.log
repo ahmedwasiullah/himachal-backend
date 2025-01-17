@@ -1,0 +1,943 @@
+2025-01-16T10:05:32.300+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] c.h.N.h.HimachalNmsApplication           : Starting HimachalNmsApplication using Java 21.0.2 with PID 20872 (D:\Spring projects final\himachal-NMS\himachal-NMS\target\classes started by 91987 in D:\Spring projects final\himachal-NMS\himachal-NMS)
+2025-01-16T10:05:32.315+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] c.h.N.h.HimachalNmsApplication           : The following 1 profile is active: "dev"
+2025-01-16T10:05:32.399+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-16T10:05:32.399+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-16T10:05:33.633+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-16T10:05:33.733+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2025-01-16T10:05:34.744+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8619 (http)
+2025-01-16T10:05:34.774+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-16T10:05:34.775+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-16T10:05:34.898+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-16T10:05:34.899+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2500 ms
+2025-01-16T10:05:35.468+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-16T10:05:35.639+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-16T10:05:35.730+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-16T10:05:36.096+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-16T10:05:36.128+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-16T10:05:36.737+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@334c4f51
+2025-01-16T10:05:36.737+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-16T10:05:36.799+05:30  WARN 20872 --- [himachal-NMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-16T10:05:36.831+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-16T10:05:37.857+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-16T10:05:37.919+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T10:05:38.245+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-16T10:05:38.839+05:30  WARN 20872 --- [himachal-NMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-16T10:05:39.441+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-16T10:05:39.530+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8619 (http) with context path '/'
+2025-01-16T10:05:39.580+05:30  INFO 20872 --- [himachal-NMS] [restartedMain] c.h.N.h.HimachalNmsApplication           : Started HimachalNmsApplication in 7.903 seconds (process running for 8.926)
+2025-01-16T10:05:39.751+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-16T10:05:39.752+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-16T10:05:39.754+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-01-16T10:05:39.799+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : 0 session created
+2025-01-16T10:05:39.948+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:05:41.060+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : 1 session created
+2025-01-16T10:05:41.080+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:05:41.101+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:05:43.084+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 2 session created
+2025-01-16T10:05:43.100+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:05:43.100+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:05:43.116+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:05:49.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:05:49.592+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:05:49.607+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:05:59.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:05:59.591+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:05:59.591+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:06:09.585+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:06:09.591+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:06:09.599+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:06:19.586+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:06:19.597+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:06:19.608+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:06:29.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:06:29.590+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:06:39.588+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:06:39.595+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:06:49.586+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:06:49.593+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:06:59.592+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:06:59.600+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:07:09.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:07:09.590+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:07:19.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:07:19.587+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:07:29.627+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:07:29.662+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2
+2025-01-16T10:07:39.600+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:07:49.586+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:07:59.578+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:08:09.589+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:08:19.578+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:08:29.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:08:39.585+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:08:49.590+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1
+2025-01-16T10:08:51.037+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 3
+2025-01-16T10:08:52.516+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.Service.DistrictService          : 1 2025-01-02 14:38:44.532086
+2025-01-16T10:08:56.000+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 4
+2025-01-16T10:08:56.034+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 5
+2025-01-16T10:08:56.686+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : 6 session created
+2025-01-16T10:08:56.702+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 6
+2025-01-16T10:08:56.703+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : 7 session created
+2025-01-16T10:08:56.719+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:08:56.721+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Error sending message to session 6: java.io.IOException: An established connection was aborted by the software in your host machine
+
+java.io.IOException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:326) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendString(WsRemoteEndpointImplBase.java:192) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:36) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendPeriodicUpdate(DashboardStateWebSocket.java:97) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.lambda$sendData$3(DashboardStateWebSocket.java:140) ~[classes/:na]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedCollection.forEach(Collections.java:2351) ~[na:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendData(DashboardStateWebSocket.java:110) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.onOpen(DashboardStateWebSocket.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:67) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:46) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:131) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:947) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.writev0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:58) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:227) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:158) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:574) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1632) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:171) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:521) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	... 22 common frames omitted
+
+2025-01-16T10:08:56.747+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : null
+2025-01-16T10:09:01.728+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : 8 session created
+2025-01-16T10:09:01.741+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:09:09.602+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:09:19.590+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:09:29.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:09:39.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:09:49.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:09:59.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:10:09.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:10:19.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:10:29.587+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:10:39.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:10:49.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:10:59.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:11:09.590+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:11:19.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:11:29.573+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:11:39.589+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:11:49.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:11:59.587+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:12:09.589+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:12:19.587+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:12:29.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:12:39.575+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:12:49.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:12:59.590+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:13:09.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:13:19.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:13:29.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:13:39.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:13:49.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:13:59.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:14:09.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:14:19.586+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:14:29.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:14:39.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:14:49.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:14:59.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:15:09.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:15:19.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:15:29.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:15:39.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:15:49.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:15:59.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:16:09.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:16:19.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:16:29.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:16:39.578+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:16:49.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:16:59.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:17:09.578+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:17:19.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:17:29.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:17:39.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:17:49.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:17:59.575+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:18:09.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:18:19.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:18:29.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:18:39.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:18:49.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:18:59.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:19:09.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:19:19.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:19:29.586+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:19:39.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:19:49.587+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:19:59.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:20:09.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:20:19.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:20:29.573+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:20:39.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:20:49.575+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:20:59.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:21:09.585+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:21:19.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:21:29.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:21:39.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:21:49.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:21:59.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:22:09.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:22:19.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:22:29.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:22:39.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:22:49.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:22:59.586+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:23:09.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:23:19.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:23:29.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:23:39.581+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:23:49.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:23:59.573+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:24:09.570+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:24:19.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:24:29.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:24:39.570+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:24:49.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:24:59.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:25:09.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:25:19.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:25:29.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:25:39.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:25:49.573+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:25:59.573+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:26:09.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:26:19.572+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:26:29.583+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:26:39.582+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:26:49.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:26:59.573+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:27:09.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:27:19.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:27:29.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:27:39.577+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:27:49.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:27:59.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:28:09.575+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:28:19.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:28:29.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:28:39.578+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:28:49.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:28:59.584+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:29:09.571+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:29:19.576+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:29:29.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:29:39.580+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:29:40.398+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 9
+2025-01-16T10:29:41.903+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : a session created
+2025-01-16T10:29:41.912+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session a
+2025-01-16T10:29:41.919+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : b session created
+2025-01-16T10:29:41.919+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:29:41.934+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Error sending message to session a: The transformer has been closed and may no longer be used
+
+java.io.IOException: The transformer has been closed and may no longer be used
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:358) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:288) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendString(WsRemoteEndpointImplBase.java:192) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:36) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendPeriodicUpdate(DashboardStateWebSocket.java:97) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.lambda$sendData$3(DashboardStateWebSocket.java:140) ~[classes/:na]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedCollection.forEach(Collections.java:2351) ~[na:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendData(DashboardStateWebSocket.java:110) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.onOpen(DashboardStateWebSocket.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:67) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:46) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:131) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:947) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.NullPointerException: Deflater has been closed
+	at java.base/java.util.zip.Deflater.ensureOpen(Deflater.java:902) ~[na:na]
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:564) ~[na:na]
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:353) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	... 23 common frames omitted
+
+2025-01-16T10:29:41.939+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session b
+2025-01-16T10:29:41.942+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:29:46.925+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : c session created
+2025-01-16T10:29:46.936+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:29:49.575+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:29:53.284+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session d
+2025-01-16T10:29:53.312+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session e
+2025-01-16T10:29:54.680+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : f session created
+2025-01-16T10:29:54.687+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session f
+2025-01-16T10:29:54.695+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : 10 session created
+2025-01-16T10:29:54.708+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 10
+2025-01-16T10:29:54.723+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:29:54.724+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Error sending message to session f: The transformer has been closed and may no longer be used
+
+java.io.IOException: The transformer has been closed and may no longer be used
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:358) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:288) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendString(WsRemoteEndpointImplBase.java:192) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:36) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendPeriodicUpdate(DashboardStateWebSocket.java:97) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.lambda$sendData$3(DashboardStateWebSocket.java:140) ~[classes/:na]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedCollection.forEach(Collections.java:2351) ~[na:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendData(DashboardStateWebSocket.java:110) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.onOpen(DashboardStateWebSocket.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:67) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:46) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:131) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:947) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.NullPointerException: Deflater has been closed
+	at java.base/java.util.zip.Deflater.ensureOpen(Deflater.java:902) ~[na:na]
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:564) ~[na:na]
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:353) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	... 23 common frames omitted
+
+2025-01-16T10:29:54.726+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:29:59.699+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : 11 session created
+2025-01-16T10:29:59.708+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 11
+2025-01-16T10:30:03.645+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 12
+2025-01-16T10:30:03.673+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 13
+2025-01-16T10:30:05.039+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 14 session created
+2025-01-16T10:30:05.048+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 14
+2025-01-16T10:30:05.063+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:05.065+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : 15 session created
+2025-01-16T10:30:05.075+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:30:05.077+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:10.065+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 16 session created
+2025-01-16T10:30:10.070+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 16
+2025-01-16T10:30:19.574+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 16
+2025-01-16T10:30:25.582+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 17
+2025-01-16T10:30:25.599+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 18
+2025-01-16T10:30:25.612+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 19
+2025-01-16T10:30:26.091+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1a
+2025-01-16T10:30:26.125+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1b
+2025-01-16T10:30:26.608+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:30:26.624+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1d
+2025-01-16T10:30:27.117+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1e
+2025-01-16T10:30:27.133+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1f
+2025-01-16T10:30:27.246+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 20 session created
+2025-01-16T10:30:27.254+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 20
+2025-01-16T10:30:27.265+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : 21 session created
+2025-01-16T10:30:27.276+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:27.278+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 21
+2025-01-16T10:30:27.282+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Error sending message to session 20: The transformer has been closed and may no longer be used
+
+java.io.IOException: The transformer has been closed and may no longer be used
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:358) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:288) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendString(WsRemoteEndpointImplBase.java:192) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:36) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendPeriodicUpdate(DashboardStateWebSocket.java:97) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.lambda$sendData$3(DashboardStateWebSocket.java:140) ~[classes/:na]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedCollection.forEach(Collections.java:2351) ~[na:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendData(DashboardStateWebSocket.java:110) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.onOpen(DashboardStateWebSocket.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:67) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:46) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:131) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:947) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.NullPointerException: Deflater has been closed
+	at java.base/java.util.zip.Deflater.ensureOpen(Deflater.java:902) ~[na:na]
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:564) ~[na:na]
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:353) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	... 23 common frames omitted
+
+2025-01-16T10:30:27.283+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:32.588+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 22 session created
+2025-01-16T10:30:32.598+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 22
+2025-01-16T10:30:33.694+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 23
+2025-01-16T10:30:33.708+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 24
+2025-01-16T10:30:34.188+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 25
+2025-01-16T10:30:34.204+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 26
+2025-01-16T10:30:34.705+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 27
+2025-01-16T10:30:34.721+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 28
+2025-01-16T10:30:35.009+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : 29 session created
+2025-01-16T10:30:35.016+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 29
+2025-01-16T10:30:35.022+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 2a session created
+2025-01-16T10:30:35.028+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:35.033+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Error sending message to session 29: The transformer has been closed and may no longer be used
+
+java.io.IOException: The transformer has been closed and may no longer be used
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:358) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:288) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendString(WsRemoteEndpointImplBase.java:192) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:36) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendPeriodicUpdate(DashboardStateWebSocket.java:97) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.lambda$sendData$3(DashboardStateWebSocket.java:140) ~[classes/:na]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedCollection.forEach(Collections.java:2351) ~[na:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendData(DashboardStateWebSocket.java:110) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.onOpen(DashboardStateWebSocket.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:67) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:46) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:131) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:947) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.NullPointerException: Deflater has been closed
+	at java.base/java.util.zip.Deflater.ensureOpen(Deflater.java:902) ~[na:na]
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:564) ~[na:na]
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:353) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	... 23 common frames omitted
+
+2025-01-16T10:30:35.042+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2a
+2025-01-16T10:30:35.047+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:40.031+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 2b session created
+2025-01-16T10:30:40.040+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2b
+2025-01-16T10:30:48.347+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2c
+2025-01-16T10:30:48.370+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2d
+2025-01-16T10:30:48.856+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2e
+2025-01-16T10:30:48.868+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2f
+2025-01-16T10:30:49.366+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 30
+2025-01-16T10:30:49.389+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 31
+2025-01-16T10:30:49.848+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 32 session created
+2025-01-16T10:30:49.856+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 32
+2025-01-16T10:30:49.862+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : 33 session created
+2025-01-16T10:30:49.869+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 32
+2025-01-16T10:30:49.873+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 33
+2025-01-16T10:30:49.936+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:49.966+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:30:54.942+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 34 session created
+2025-01-16T10:30:54.952+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 34
+2025-01-16T10:30:59.579+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 34
+2025-01-16T10:31:03.681+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 35
+2025-01-16T10:31:03.690+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 36
+2025-01-16T10:31:04.199+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 37
+2025-01-16T10:31:04.228+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 38
+2025-01-16T10:31:04.715+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 39
+2025-01-16T10:31:04.726+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 3a
+2025-01-16T10:31:05.229+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 3b
+2025-01-16T10:31:05.251+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 3c
+2025-01-16T10:31:05.423+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 3d session created
+2025-01-16T10:31:05.432+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 3d
+2025-01-16T10:31:05.442+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : 3e session created
+2025-01-16T10:31:05.451+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 3e
+2025-01-16T10:31:05.455+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 3d
+2025-01-16T10:31:05.497+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:31:05.523+05:30 ERROR 20872 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:31:10.505+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 3f session created
+2025-01-16T10:31:10.511+05:30  INFO 20872 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 3f
+2025-01-16T10:31:19.578+05:30  INFO 20872 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 3f
+2025-01-16T10:31:28.262+05:30  INFO 20872 --- [himachal-NMS] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-16T10:31:28.262+05:30  INFO 20872 --- [himachal-NMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-16T10:31:28.262+05:30  INFO 20872 --- [himachal-NMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T10:31:28.277+05:30  INFO 20872 --- [himachal-NMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-16T10:31:28.277+05:30  INFO 20872 --- [himachal-NMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-16T10:31:28.277+05:30 ERROR 20872 --- [himachal-NMS] [SpringApplicationShutdownHook] c.h.N.h.w.DashboardStateWebSocket        : java.nio.channels.ClosedChannelException
+2025-01-16T10:32:16.647+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] c.h.N.h.HimachalNmsApplication           : Starting HimachalNmsApplication using Java 21.0.2 with PID 16176 (D:\Spring projects final\himachal-NMS\himachal-NMS\target\classes started by 91987 in D:\Spring projects final\himachal-NMS\himachal-NMS)
+2025-01-16T10:32:16.647+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] c.h.N.h.HimachalNmsApplication           : The following 1 profile is active: "dev"
+2025-01-16T10:32:16.740+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-16T10:32:16.740+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-16T10:32:17.568+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-16T10:32:17.693+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+2025-01-16T10:32:18.461+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8619 (http)
+2025-01-16T10:32:18.475+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-16T10:32:18.475+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-16T10:32:18.521+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-16T10:32:18.521+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+2025-01-16T10:32:18.771+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-16T10:32:18.850+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-16T10:32:18.881+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-16T10:32:19.256+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-16T10:32:19.287+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-16T10:32:19.522+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fe221dd
+2025-01-16T10:32:19.522+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-16T10:32:19.569+05:30  WARN 16176 --- [himachal-NMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-16T10:32:19.600+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-16T10:32:20.537+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-16T10:32:20.568+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T10:32:20.927+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-16T10:32:21.209+05:30  WARN 16176 --- [himachal-NMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-16T10:32:21.615+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-16T10:32:21.678+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8619 (http) with context path '/'
+2025-01-16T10:32:21.678+05:30  INFO 16176 --- [himachal-NMS] [restartedMain] c.h.N.h.HimachalNmsApplication           : Started HimachalNmsApplication in 5.667 seconds (process running for 6.293)
+2025-01-16T10:32:26.077+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-16T10:32:26.077+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-16T10:32:26.077+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-01-16T10:32:26.124+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : 0 session created
+2025-01-16T10:32:26.218+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 0
+2025-01-16T10:32:30.999+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1
+2025-01-16T10:32:31.000+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2
+2025-01-16T10:32:31.000+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : session not available
+2025-01-16T10:32:31.479+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 3
+2025-01-16T10:32:31.496+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 4
+2025-01-16T10:32:32.012+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 5
+2025-01-16T10:32:32.034+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 6
+2025-01-16T10:32:32.225+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 7 session created
+2025-01-16T10:32:32.249+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 7
+2025-01-16T10:32:32.253+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : An established connection was aborted by the software in your host machine
+2025-01-16T10:32:32.255+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : 8 session created
+2025-01-16T10:32:32.265+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 8
+2025-01-16T10:32:32.278+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : An established connection was aborted by the software in your host machine
+2025-01-16T10:32:37.253+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 9 session created
+2025-01-16T10:32:37.276+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:32:41.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:32:51.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:01.707+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:11.706+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:30.964+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : a session created
+2025-01-16T10:33:30.975+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:30.985+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session a
+2025-01-16T10:33:30.986+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : b session created
+2025-01-16T10:33:31.001+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:31.005+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:33:31.018+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session b
+2025-01-16T10:33:31.030+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Error sending message to session a: The transformer has been closed and may no longer be used
+
+java.io.IOException: The transformer has been closed and may no longer be used
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:358) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:288) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendString(WsRemoteEndpointImplBase.java:192) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:36) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendPeriodicUpdate(DashboardStateWebSocket.java:97) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.lambda$sendData$3(DashboardStateWebSocket.java:140) ~[classes/:na]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at java.base/java.util.Collections$SynchronizedCollection.forEach(Collections.java:2351) ~[na:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.sendData(DashboardStateWebSocket.java:110) ~[classes/:na]
+	at com.hibernate.NMS.himachal_NMS.websockets.DashboardStateWebSocket.onOpen(DashboardStateWebSocket.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:67) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:46) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:131) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:947) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.NullPointerException: Deflater has been closed
+	at java.base/java.util.zip.Deflater.ensureOpen(Deflater.java:902) ~[na:na]
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:564) ~[na:na]
+	at org.apache.tomcat.websocket.PerMessageDeflate.sendMessagePart(PerMessageDeflate.java:353) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	... 23 common frames omitted
+
+2025-01-16T10:33:31.036+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:33:31.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:36.016+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : c session created
+2025-01-16T10:33:36.036+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:36.040+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:33:41.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:41.715+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:33:51.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:33:51.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:34:01.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:34:01.712+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:34:11.715+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:34:11.722+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:34:21.713+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:34:21.718+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:34:31.692+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:34:31.707+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:34:41.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:34:41.711+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:34:51.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:34:51.709+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:35:01.713+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:01.718+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:35:11.708+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:11.714+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:35:21.708+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:21.711+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:35:31.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:31.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session c
+2025-01-16T10:35:37.036+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : d session created
+2025-01-16T10:35:37.036+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:37.036+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session d
+2025-01-16T10:35:37.054+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:35:41.711+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:43.050+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : e session created
+2025-01-16T10:35:43.050+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:35:43.050+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session e
+2025-01-16T10:35:51.692+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 9
+2025-01-16T10:37:04.877+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : f session created
+2025-01-16T10:37:04.877+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session f
+2025-01-16T10:37:04.893+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 10 session created
+2025-01-16T10:37:04.893+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 10
+2025-01-16T10:37:04.909+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session f
+2025-01-16T10:37:04.924+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:37:04.956+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:37:09.937+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : 11 session created
+2025-01-16T10:37:09.948+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 11
+2025-01-16T10:37:11.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 11
+2025-01-16T10:37:17.098+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 12 session created
+2025-01-16T10:37:17.109+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 12
+2025-01-16T10:37:17.111+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : 13 session created
+2025-01-16T10:37:17.124+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 12
+2025-01-16T10:37:17.131+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 13
+2025-01-16T10:37:17.131+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:37:17.159+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:37:22.145+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : 14 session created
+2025-01-16T10:37:22.155+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 14
+2025-01-16T10:37:31.690+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 14
+2025-01-16T10:37:41.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 14
+2025-01-16T10:37:51.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 14
+2025-01-16T10:38:01.126+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardStateWebSocket        : 15 session created
+2025-01-16T10:38:01.141+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:01.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:10.030+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 16 session created
+2025-01-16T10:38:10.045+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:10.045+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 16
+2025-01-16T10:38:11.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:11.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 16
+2025-01-16T10:38:11.928+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 17
+2025-01-16T10:38:13.412+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 18 session created
+2025-01-16T10:38:13.428+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 18
+2025-01-16T10:38:13.428+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:14.693+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 19
+2025-01-16T10:38:15.997+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 1a session created
+2025-01-16T10:38:16.002+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1a
+2025-01-16T10:38:16.012+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:20.427+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1b
+2025-01-16T10:38:21.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1b
+2025-01-16T10:38:21.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:23.380+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T10:38:31.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:41.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:38:51.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:39:01.707+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:39:11.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:39:21.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1b
+2025-01-16T10:39:21.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:39:31.710+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:39:41.709+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:39:51.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:40:01.712+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:40:11.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 15
+2025-01-16T10:40:18.211+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:40:18.242+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : 1d session created
+2025-01-16T10:40:18.242+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1d
+2025-01-16T10:40:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:40:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1d
+2025-01-16T10:40:24.578+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1e
+2025-01-16T10:40:24.582+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:40:27.292+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T10:40:39.329+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T10:40:43.277+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 1f session created
+2025-01-16T10:40:43.291+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 1f
+2025-01-16T10:40:45.395+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 20
+2025-01-16T10:40:45.400+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:40:49.755+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.Service.DistrictService          : 1 2025-01-13 14:08:50.202478
+2025-01-16T10:40:53.903+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.Service.DistrictService          : 1 2025-01-13 14:08:50.202478
+2025-01-16T10:40:53.920+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.Service.DistrictService          : 0 2025-01-13 14:08:50.202478
+2025-01-16T10:40:58.600+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T10:41:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 20
+2025-01-16T10:41:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:41:44.752+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : 21 session created
+2025-01-16T10:41:44.764+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 21
+2025-01-16T10:41:51.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 21
+2025-01-16T10:41:52.614+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 22
+2025-01-16T10:41:52.618+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:41:53.892+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 23 session created
+2025-01-16T10:41:53.905+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:42:01.704+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:42:11.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:42:21.692+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:42:21.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:42:31.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:42:41.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:42:51.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:43:01.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:43:11.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:43:21.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:43:21.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:43:31.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 23
+2025-01-16T10:43:34.860+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 24 session created
+2025-01-16T10:43:34.872+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 24
+2025-01-16T10:43:37.114+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 25 session created
+2025-01-16T10:43:37.125+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:43:41.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:43:51.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:44:01.709+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:44:11.704+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:44:21.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:44:21.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:44:31.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:44:41.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:44:51.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:45:01.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:45:11.707+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:45:21.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:45:21.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:45:31.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:45:41.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:45:51.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:46:01.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:46:11.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:46:21.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:46:21.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:46:31.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:46:41.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:46:51.710+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:47:01.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:47:11.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:47:21.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:47:21.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:47:31.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:47:41.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:47:51.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:48:01.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:48:11.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:48:21.690+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:48:21.690+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 25
+2025-01-16T10:48:22.022+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 26 session created
+2025-01-16T10:48:22.042+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 26
+2025-01-16T10:48:22.056+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:48:28.021+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : 27 session created
+2025-01-16T10:48:28.038+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:48:31.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:48:41.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:48:51.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:49:01.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:49:11.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:49:21.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:49:21.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:49:31.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:49:41.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:49:51.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:50:01.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:50:11.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:50:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:50:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:50:31.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:50:41.704+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:50:51.706+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:51:01.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:51:11.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:51:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:51:21.706+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:51:31.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:51:41.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:51:51.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:52:01.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:52:11.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:52:21.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:52:21.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:52:31.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:52:41.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:52:51.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:53:01.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:53:11.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:53:21.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:53:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:53:31.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:53:41.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:53:51.690+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:54:01.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:54:11.692+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:54:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:54:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:54:31.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:54:41.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:54:51.706+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:55:01.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:55:11.711+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:55:21.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:55:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 27
+2025-01-16T10:55:25.029+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 28 session created
+2025-01-16T10:55:25.045+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 28
+2025-01-16T10:55:25.045+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:55:31.028+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 29 session created
+2025-01-16T10:55:31.028+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 29
+2025-01-16T10:55:31.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 29
+2025-01-16T10:55:41.024+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 2a session created
+2025-01-16T10:55:41.045+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2a
+2025-01-16T10:55:41.081+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:55:47.020+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 2b session created
+2025-01-16T10:55:47.020+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2b
+2025-01-16T10:55:51.706+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2b
+2025-01-16T10:56:01.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2b
+2025-01-16T10:56:11.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2b
+2025-01-16T10:56:21.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:56:21.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2b
+2025-01-16T10:56:29.024+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : 2c session created
+2025-01-16T10:56:29.024+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2c
+2025-01-16T10:56:29.040+05:30 ERROR 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : java.io.IOException: An established connection was aborted by the software in your host machine
+2025-01-16T10:56:34.051+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 2d session created
+2025-01-16T10:56:34.065+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:56:41.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:56:51.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:57:01.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:57:11.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:57:21.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:57:21.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:57:31.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:57:41.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:57:51.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:58:01.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:58:11.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:58:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:58:21.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:58:31.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:58:41.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:58:51.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:59:01.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:59:11.706+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:59:21.701+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 1c
+2025-01-16T10:59:21.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:59:31.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:59:41.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T10:59:51.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T11:00:01.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T11:00:11.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2d
+2025-01-16T11:00:21.975+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2e
+2025-01-16T11:00:22.033+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 2f session created
+2025-01-16T11:00:22.033+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:00:31.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:00:41.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:00:51.704+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:01:01.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:01:11.698+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:01:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 2e
+2025-01-16T11:01:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:01:31.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:01:41.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:01:51.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:02:01.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:02:11.692+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 2f
+2025-01-16T11:02:18.129+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-3] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 30
+2025-01-16T11:02:18.129+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : 31 session created
+2025-01-16T11:02:18.143+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:02:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 30
+2025-01-16T11:02:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:02:31.709+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:02:33.156+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : 32 session created
+2025-01-16T11:02:33.164+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:02:33.169+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 32
+2025-01-16T11:02:34.942+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 33
+2025-01-16T11:02:37.473+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : 34 session created
+2025-01-16T11:02:37.483+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:02:37.489+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 34
+2025-01-16T11:02:39.525+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 35
+2025-01-16T11:02:41.703+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:02:42.699+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-5] c.h.N.h.Service.DistrictService          : 0 2025-01-13 14:08:50.202478
+2025-01-16T11:02:49.560+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-6] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T11:02:51.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:03:01.707+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:03:11.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:03:20.999+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-8] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T11:03:21.010+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-1] c.h.N.h.Service.DistrictService          : 1 2025-01-02 14:38:44.532086
+2025-01-16T11:03:21.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 35
+2025-01-16T11:03:21.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:03:31.707+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:03:41.705+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:03:51.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:01.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:11.702+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:21.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 35
+2025-01-16T11:04:21.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:31.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:41.693+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:51.196+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-4] c.h.N.h.Service.DistrictService          : 1 2025-01-13 14:08:50.202478
+2025-01-16T11:04:51.688+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:04:53.302+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-10] c.h.N.h.Service.DistrictService          : 0 2025-01-02 14:38:44.532086
+2025-01-16T11:05:01.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:05:11.691+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:05:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardDistrictWebSocket     : Message sent to session 35
+2025-01-16T11:05:21.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:05:31.695+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:05:41.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:05:51.699+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:06:01.697+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:06:07.824+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : 36 session created
+2025-01-16T11:06:07.830+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:06:07.835+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-7] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 36
+2025-01-16T11:06:11.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:06:11.689+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 36
+2025-01-16T11:06:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:06:21.700+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 36
+2025-01-16T11:06:31.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 31
+2025-01-16T11:06:31.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 36
+2025-01-16T11:06:40.229+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : 37 session created
+2025-01-16T11:06:40.229+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-2] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 37
+2025-01-16T11:06:40.263+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : 38 session created
+2025-01-16T11:06:40.264+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 38
+2025-01-16T11:06:40.279+05:30  INFO 16176 --- [himachal-NMS] [http-nio-8619-exec-9] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 37
+2025-01-16T11:06:41.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 38
+2025-01-16T11:06:41.696+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 37
+2025-01-16T11:06:51.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 38
+2025-01-16T11:06:51.694+05:30  INFO 16176 --- [himachal-NMS] [scheduling-1] c.h.N.h.w.DashboardStateWebSocket        : Message sent to session 37
+2025-01-16T11:06:52.865+05:30  INFO 16176 --- [himachal-NMS] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-16T11:06:52.865+05:30  INFO 16176 --- [himachal-NMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-16T11:06:52.865+05:30  INFO 16176 --- [himachal-NMS] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T11:06:52.865+05:30  INFO 16176 --- [himachal-NMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-16T11:06:52.881+05:30  INFO 16176 --- [himachal-NMS] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-16T11:06:52.881+05:30 ERROR 16176 --- [himachal-NMS] [SpringApplicationShutdownHook] c.h.N.h.w.DashboardStateWebSocket        : java.nio.channels.ClosedChannelException
+2025-01-16T11:06:52.881+05:30 ERROR 16176 --- [himachal-NMS] [SpringApplicationShutdownHook] c.h.N.h.w.DashboardStateWebSocket        : java.nio.channels.ClosedChannelException

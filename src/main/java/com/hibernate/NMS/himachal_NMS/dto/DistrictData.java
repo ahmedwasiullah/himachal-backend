@@ -14,7 +14,8 @@ import lombok.Setter;
 public class DistrictData {
 
     private String district;
-    private long active_devices;
-    private long inactive_devices;
+    private int active_devices;
+    private int inactive_devices;
+
 
 }

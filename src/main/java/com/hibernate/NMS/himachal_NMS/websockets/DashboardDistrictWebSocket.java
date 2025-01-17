@@ -1,29 +1,23 @@
 package com.hibernate.NMS.himachal_NMS.websockets;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.hibernate.NMS.himachal_NMS.config.SpringContextProvider;
 import com.hibernate.NMS.himachal_NMS.config.WebSocketCors;
 import com.hibernate.NMS.himachal_NMS.dto.AllDistrictDto;
 import com.hibernate.NMS.himachal_NMS.dto.DistrictData;
+import com.hibernate.NMS.himachal_NMS.enums.Status;
 import com.hibernate.NMS.himachal_NMS.model.HimachalDevice;
-import com.hibernate.NMS.himachal_NMS.repository.StateRepository;
-import jakarta.annotation.PostConstruct;
-import jakarta.persistence.Tuple;
+import com.hibernate.NMS.himachal_NMS.repository.HimachalDeviceRepository;
 import jakarta.websocket.*;
 import jakarta.websocket.Session;
 import jakarta.websocket.server.PathParam;
 import jakarta.websocket.server.ServerEndpoint;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.logging.Logger;
 
 @Slf4j
 @Component
@@ -37,11 +31,11 @@ public class DashboardDistrictWebSocket {
     private static final ConcurrentHashMap<Session, String> sessionsMessage = new ConcurrentHashMap<>();
     private final ObjectMapper objectMapper;
 
-    private final StateRepository stateRepository;
+    private final HimachalDeviceRepository stateRepository;
     public DashboardDistrictWebSocket() {
         this.objectMapper = new ObjectMapper();
         ApplicationContext context= SpringContextProvider.getApplicationContext();
-        this.stateRepository=context.getBean(StateRepository.class);
+        this.stateRepository=context.getBean(HimachalDeviceRepository.class);
 
     }
 
@@ -58,10 +52,14 @@ public class DashboardDistrictWebSocket {
     @OnOpen
     public void onOpen(Session session, @PathParam("district_name") String districtName) {
         // Add the session and district name to the map
-        sessions.put(session, districtName);
-        sessionsMessage.put(session,"");
-        System.out.println("New connection for district: " + districtName);
-        sendData();
+        try {
+            sessions.put(session, districtName);
+            sessionsMessage.put(session, "");
+            System.out.println("New connection for district: " + districtName);
+            sendData();
+        }catch (Exception e){
+            log.error(e.getMessage());
+        }
         //share the data first from here
     }
 
@@ -73,7 +71,9 @@ public class DashboardDistrictWebSocket {
         try {
             session.getBasicRemote().sendText("Echo: " + message);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error(e.getMessage());
+        } catch (Exception e){
+            log.error(e.getMessage()!=null?e.getMessage():"null pointer");
         }
     }
 
@@ -88,7 +88,7 @@ public class DashboardDistrictWebSocket {
     @OnError
     public void onError(Session session, Throwable throwable) {
         // Handle errors
-        throwable.printStackTrace();
+//        log.error(throwable.printStackTrace());
     }
 
 
@@ -99,8 +99,7 @@ public class DashboardDistrictWebSocket {
             session.getBasicRemote().sendText(message);
             log.info("Message sent to session " + session.getId());
         } catch (IOException e) {
-
-            e.printStackTrace();
+             log.error(e.getMessage());
         }
 
     }
@@ -121,21 +120,39 @@ public class DashboardDistrictWebSocket {
 
     public synchronized void sendData(){
         sessions.forEach((session, district) -> {
-            if(!sessionsMessage.get(session).equals("")){
+            try {
+              if(!sessionsMessage.get(session).equals("")){
+
                 System.out.println(sessionsMessage.get(session)+" the message");
                 DashboardDistrictWebSocket.broadcastToDistrict(district, sessionsMessage.get(session),session);
-            }else {
-                try {
+              }else {
 
-                    Tuple data = stateRepository.getDistrictData(district);
-                    DistrictData curr = new DistrictData(district, (long) data.get(0), (long) data.get(1));
-                    List<HimachalDevice> logs=stateRepository.getAllDistrictLogs(district);
-                    AllDistrictDto allData=new AllDistrictDto(curr,logs);
-                    String jsonData = getObjectMapper().writeValueAsString(allData);
-                    DashboardDistrictWebSocket.broadcastToDistrict(district, jsonData,session);
-                } catch (Exception e) {
-                    e.printStackTrace();
+                List<HimachalDevice> logs;
+                if (district.equalsIgnoreCase("Virtual Machine")) {
+                    logs = stateRepository.getVMDataAndLogs();
+                } else if (district.equalsIgnoreCase("Control room")) {
+                    logs = stateRepository.getDistrictDataAndLogs("SEOCHP");
+                } else if (district.contains("Lahaul")) {
+                    logs = stateRepository.getDistrictDataAndLogs("LAHAUL");
+                } else {
+                    logs = stateRepository.getDistrictDataAndLogs(district);
                 }
+
+                int active = 0;
+                int inactive = 0;
+                for (HimachalDevice log : logs) {
+                    if (log.getStatus().equals(Status.DOWN)) {
+                        inactive++;
+                    } else active++;
+                }
+                DistrictData curr = new DistrictData(district, active, inactive);
+                AllDistrictDto allData = new AllDistrictDto(curr, logs);
+                String jsonData = getObjectMapper().writeValueAsString(allData);
+                DashboardDistrictWebSocket.broadcastToDistrict(district, jsonData, session);
+
+              }
+            } catch (Exception e) {
+                log.error("session not available");
             }
         });
     }

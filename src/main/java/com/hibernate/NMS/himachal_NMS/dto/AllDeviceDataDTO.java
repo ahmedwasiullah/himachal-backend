@@ -1,6 +1,7 @@
 package com.hibernate.NMS.himachal_NMS.dto;
 
 import com.hibernate.NMS.himachal_NMS.model.HimachalDevice;
+import com.hibernate.NMS.himachal_NMS.model.History;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,6 +17,6 @@ import java.util.List;
 public class AllDeviceDataDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     String Message;
-    List<HimachalDevice> logs;
+    List<History> logs;
     PerformanceDeviceData performanceDeviceData;
 }

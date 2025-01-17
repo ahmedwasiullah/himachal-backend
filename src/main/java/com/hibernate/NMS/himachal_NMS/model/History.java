@@ -5,27 +5,28 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CurrentTimestamp;
 
-import java.time.LocalDateTime;
 import java.util.Date;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
-@Table(name = "hp")
-public class HimachalDevice {
+@Table(name = "hpt")
+public class History {
+
     @Id
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
 
     private String name;
 
     private String ip;
 
-
     private Status status;
 
-
+    @CurrentTimestamp
     private Date timestamp;
 
+    private String district;
 }
